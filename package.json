@@ -1,0 +1,13 @@
+{
+  "name": "google-inbox-wrapper",
+  "version": "0.0.1",
+  "description": "Google Inbox web app wrapper with notification counter on app icon.",
+  "scripts": {
+    "build": "nativefier 'https://inbox.google.com' --counter --inject ./google-inbox.js --name 'Inbox'"
+  },
+  "dependencies": {
+    "nativefier": "^7.4.1"
+  },
+  "author": "Ales Rosina (http://alesrosina.com)",
+  "license": "MIT"
+}
