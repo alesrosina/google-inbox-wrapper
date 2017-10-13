@@ -1,7 +1,8 @@
 var unreadOld = 0;
 setInterval(function() {
   try {
-    var unread = document.body.querySelectorAll('div.G3').length;
+    // .G3 is for all new emails, .pW is for snoozed ones
+    var unread = document.body.querySelectorAll('div.G3, div.pW').length;
     var newTitle = document.title.split('–');
     if(unread === 0) {
       newTitle[0] = 'Inbox ';
